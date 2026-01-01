@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulo</title>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Space Invaders</title>
 </head>
-<link rel="stylesheet" href="css/container.css">
-<link rel="stylesheet" href="css/obstacule.css">
-<link rel="stylesheet" href="css/animacoes.css">
-<link rel="stylesheet" href="css/personagem.css">
-<style>
-
-</style>
 <body>
-    <div class="container">
-        <img src="assets/obstaculo.png" alt="" class="obstacule">
-        <img src="./assets/azul-corre.gif" alt="" class="personagem1">
-    </div>
+    <section class="score-ui">
+        <div>
+            <span class="score">Score: <span>0</span></span>
+            <span class="level">Level: <span>0</span></span>
+            <span class="high">high: <span>0</span></span>
+        </div>
+        
+    </section>
+    <section class="start-screen screen">
+        <div>
+            <h1>Space Invaders</h1>
+            <button class="button-play">Play</button>
+        </div>
+    </section>
+
+    <section class="game-over screen">
+        <div>
+            <h1>Game Over</h1>
+            <button class="restart">Restart</button>
+        </div>
+        
+    </section>
+
+    <canvas></canvas>
 </body>
 </html>
-<script type="module" src="js/main.js"></script>
+<script type="module" src="src/main.js"></script>
