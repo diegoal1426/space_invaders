@@ -41,7 +41,6 @@ export class SoundEffects{
         this.nextLevelSound.play();
     }
     playShootSound(){
-        console.log(this.shootSound);
         this.shootSound[this.currentShootSound].currentTime = 0;
         this.shootSound[this.currentShootSound].play();
         this.currentShootSound = (this.currentShootSound +1) % 5;
